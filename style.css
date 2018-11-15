@@ -25,19 +25,19 @@ a, a:visited {
 }
 
 .pull-left {
-  float: left;
+  float: left !important;
 }
 
 .pull-right {
-  float: right;
+  float: right !important;
 }
 
 .align-left {
-  text-align: left;
+  text-align: left !important;
 }
 
 .align-right {
-  text-align: right;
+  text-align: right !important;
 }
 
 #wrapper {
@@ -131,6 +131,52 @@ a, a:visited {
 }
 
 .mobile-nav-list, .mobile-menu {
+  display: none;
+}
+
+.dashboard-nav {
+  background-color: #666666;
+  height: 100%;
+}
+
+.dashboard>.col-2>.col-12>.brand>a {
+  left: 0;
+  margin-left: 10px !important;
+  color: #fafafa;
+  position: relative;
+}
+
+.dashboard-menu-list {
+  list-style-type: none;
+  color: #fafafa;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.dashboard-menu-list>li {
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  display: block;
+  cursor: pointer;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.dashboard-menu-list>li:hover {
+  color: #f5f5f5;
+  background-color: #606060;
+}
+
+.dashboard-menu-list>.active {
+  background-color: #606060;
+  color: #f5f5f5;
+  border-left: solid 5px #D7EEEE;
+}
+
+.dash-mobile-menu {
+  color: #fafafa;
+  margin: 10px;
   display: none;
 }
 
@@ -252,6 +298,10 @@ a, a:visited {
   margin-top: 15px;
 }
 
+.features {
+  padding: 75px;
+}
+
 .feature {
   padding: 10px;
 }
@@ -355,6 +405,72 @@ a, a:visited {
   margin: 0;
 }
 
+/* dashboard */
+.dash-content {
+  padding: 50px;
+}
+
+.statistics {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stat {
+  border-radius: 5px;
+  padding: 10px;
+  color: #666666;
+  min-height: 100px;
+  margin: 5px;
+}
+
+.stat-num {
+  font-size: 50px;
+}
+
+.col-3>.res {
+  background-color: #D7EEEE;
+}
+
+.col-3>.parking {
+  background-color: #DCEED7;
+}
+
+.col-3>.rent {
+  background-color: #EED7D7;
+}
+
+.col-3>.pet {
+  background-color: #EBD7EE;
+}
+
+.notifications {
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 15px;
+  height: 250px;
+  overflow: scroll;
+}
+
+.notifications table {
+  width: 100%;
+}
+
+.notifications th, .notifications td {
+  text-align: center;
+  padding: 5px;
+  font-size:10px;
+}
+
+.notifications tr:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+
+.notifications>h4 {
+  text-align: center;
+  margin: 3px;
+}
+
 /* mobile */
 @media only screen and (min-width: 768px) {
 
@@ -410,7 +526,7 @@ a, a:visited {
       cursor:pointer;
     }
 
-    .mobile-nav-list {
+    .mobile-nav-list, .dashboard-nav {
       position: fixed;
       z-index: 1001;
       height: 100%;
@@ -458,5 +574,9 @@ a, a:visited {
     .footer-text-left, .footer-text-right {
       text-align: center;
       margin: 5px;
+    }
+
+    .dash-mobile-menu {
+      display: block;
     }
 }

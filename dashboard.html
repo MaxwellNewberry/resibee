@@ -1,0 +1,120 @@
+<html>
+  <head>
+    <title>dashboard (resibee)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  </head>
+  <body>
+
+  <div id="wrapper">
+
+    <nav class="dashboard col-12">
+      <div class="col-2 dashboard-nav" id="dash-nav">
+        <div class="col-12">
+          <div class="align-left pull-left brand"><a href="index.php">resibee</a></div>
+          <div id="mobile-menu" class="dash-mobile-menu align-right"><i class="fas fa-bars fa-2x"></i></div>
+        </div>
+        <ul id="mobile-list" class="col-12 dashboard-menu-list">
+          <li class="active">dashboard</li>
+          <li>resident list</li>
+          <li>parking spots</li>
+          <li>rent management</li>
+          <li>tenant communication</li>
+          <li>damage management</li>
+        </ul>
+      </div>
+      <div class="col-10 dash-content">
+
+          <!-- statistics -->
+          <div class="col-12 statistics">
+            <div class="col-3">
+              <div class="stat res">
+                <span class="stat-num">100</span>
+                <div class="stat-label">residents</div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="stat parking">
+                <span class="stat-num">100</span>
+                <div class="stat-label">parking spots left</div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="stat rent">
+                <span class="stat-num">100</span>
+                <div class="stat-label">unpaid rent</div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="stat pet">
+                <span class="stat-num">100</span>
+                <div class="stat-label">pets</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- row 2 -->
+          <div class="col-12 row2">
+
+            <div class="col-6">
+              <div class="notifications">
+                <h4>Notifications</h4>
+                <table>
+                  <tr>
+                    <th class="col-6">Notification</th>
+                    <th class="col-6">Date/Time</th>
+                  </tr>
+                  <tr>
+                    <td class="col-6">Rachel Andrews has paid her rent.</td>
+                    <td class="col-6">Dec 6th, 2018</td>
+                  </tr>
+                  <tr>
+                    <td class="col-6">Rachel Andrews has paid her rent.</td>
+                    <td class="col-6">Dec 6th, 2018</td>
+                  </tr>
+                  <tr>
+                    <td class="col-6">Rachel Andrews has paid her rent.</td>
+                    <td class="col-6">Dec 6th, 2018</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+          </div>
+
+      </div>
+    </nav>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(window).scroll(function() {
+    if ( $(window).scrollTop() >= 100 ) {
+        $('#navbar').addClass('show');
+    } else {
+        $('#navbar').removeClass('show');
+    }
+  });
+
+  $(document).ready(function() {
+    $('#wrapper').fadeIn();
+    $("#mobile-menu").click(function() {
+      if($("#mobile-list").is(":visible"))
+      {
+        $("#mobile-list").hide(300);
+        $("#dash-nav").css('background', 'none');
+        $("#mobile-menu").css('color', '#666666');
+      }
+      else {
+        $("#mobile-list").show(300);
+        $("#dash-nav").css('background', '#666666');
+        $("#mobile-menu").css('color', '#fafafa');
+      }
+    });
+  });
+  </script>
+  </body>
+  </html>
