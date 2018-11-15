@@ -1,0 +1,155 @@
+<html>
+  <head>
+    <title>home (resibee)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div id="wrapper">
+
+      <nav class="mobile-navbar">
+        <div id="mobile-menu" class="mobile-menu"><i class="fas fa-bars fa-2x"></i></div>
+        <ul id="mobile-list" class="mobile-nav-list">
+          <li class="mobile-nav-link unselectable"><a href="">Home</a></li>
+          <li class="mobile-nav-link unselectable"><a href="">Our Story</a></li>
+          <li class="mobile-nav-link unselectable"><a href="">Login</a></li>
+          <li class="mobile-nav-link unselectable"><a href="">Services</a></li>
+        </ul>
+      </nav>
+
+      <nav class="navbar" id="navbar">
+        <span class="brand"><a href="index.php">resibee</a></span>
+        <ul class="nav-list">
+          <li class="nav-link left"><a href="index.html">Home</a></li>
+          <li class="nav-link left"><a href="story.html">Our Story</a></li>
+          <li class="nav-link right"><a href="/login/">Login</a></li>
+          <li class="nav-link right"><a href="/services/">Services</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1>Tenant management, <span class="emphasize">innovated.</span></h1>
+          <p>We've reinvented the way you manage your residents to ensure the best experience for you and them. Everything you need in one website so that you'll never need anything else.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="header col-12">
+          <h1>We offer a variety of different features</h1>
+        </div>
+        <div class="side col-4">
+          <div class="feature">
+            <div class="col-2 icon"><i class="fas fa-book fa-2x"></i></div>
+            <div class="col-10">
+              <h4>Advanced resident information tools</h4>
+              <p>Easily store and access information about your residents all in one place.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="col-2 icon"><i class="fas fa-comments fa-2x"></i></div>
+            <div class="col-10">
+              <h4>Communicate with your tenants</h4>
+              <p>Receive requests, answer questions, and more using our communication tools.</p>
+            </div>
+          </div>
+        </div>
+        <div class="side col-4">
+          <div class="feature">
+            <div class="col-2 icon"><i class="fas fa-money-check-alt fa-2x"></i></div>
+            <div class="col-10">
+              <h4>Receive rent payments and more</h4>
+              <p>Allow tenants to pay rent via debit card, or mark it paid by check or cash online.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="col-2 icon"><i class="fas fa-car fa-2x"></i></div>
+            <div class="col-10">
+              <h4>Manage parking spaces</h4>
+              <p>Have parking? Manage yours spots whether they're assigned or free-for-all.</p>
+            </div>
+          </div>
+        </div>
+        <div class="side col-4">
+          <div class="feature">
+            <div class="col-2 icon"><i class="fas fa-house-damage fa-2x"></i></div>
+            <div class="col-10">
+              <h4>Track damages for each lease</h4>
+              <p>Manage damages and track repair progress for each lease.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="col-2 icon"><i class="fas fa-people-carry fa-2x"></i></div>
+            <div class="col-10">
+              <h4>Move in day has never been easier</h4>
+              <p>Schedule every lease in our system and track each tenant with ease.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="payments section col-12">
+        <div class="col-3"><i class="fab fa-apple-pay fa-3x"></i></div>
+        <div class="col-3"><i class="fab fa-paypal fa-3x"></i></div>
+        <div class="col-3"><i class="fab fa-stripe fa-3x"></i></div>
+        <div class="col-3"><i class="fab fa-amazon-pay fa-3x"></i></div>
+      </div>
+
+      <div class="form-bg section">
+        <div class="head-text col-12">
+          So what are you waiting for?
+        </div>
+        <div class="col-6 side form">
+          <span class="emphasize">Interested in learning more?</span> Enter your e-mail to the right and one of our marketing specialists will reach out and give you more information on how to join the best tenant management software there is!
+        </div>
+        <div class="col-6 side form email">
+          <div class="col-12">
+            <input class="form-input" type="text" id="email" name="submit" /> <button class="form-submit" type="submit" name="submit">Submit</button>
+          </div>
+          <div class="col-12">
+            <div class="helper">Your e-mail will be privately stored, we do not sell customer information. To learn more, check out our <a href="privacy.html">privacy policy</a>.</div>
+          </div>
+        </div>
+      </div>
+
+    <div class="footer section">
+      <div class="col-12">
+        <div class="footer-text-left col-6">
+          resibee &copy;2018
+        </div>
+        <div class="footer-text-right col-6">
+          <a href="privacy.html">privacy policy</a> | <a href="contact.html">contact us</a> | <a href="careers.html">careers</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(window).scroll(function() {
+    if ( $(window).scrollTop() >= 100 ) {
+        $('#navbar').addClass('show');
+    } else {
+        $('#navbar').removeClass('show');
+    }
+  });
+
+  $(document).ready(function() {
+    $('#wrapper').fadeIn();
+    $("#mobile-menu").click(function() {
+      if($("#mobile-list").is(":visible"))
+      {
+        $("#mobile-list").hide(300);
+      }
+      else {
+        $("#mobile-list").show(300);
+      }
+    });
+  });
+  </script>
+  </body>
+</html>
